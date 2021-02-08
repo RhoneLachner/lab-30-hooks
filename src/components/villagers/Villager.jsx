@@ -17,7 +17,8 @@ Villager.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   quote: PropTypes.string.isRequired,
-  skill: PropTypes.string.isRequired
+  skill: PropTypes.string.isRequired,
+  _id: PropTypes.number.isRequired
 };
 
 export default Villager;
