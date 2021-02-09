@@ -2,8 +2,12 @@
 
 exports[`Villager component renders Villager 1`] = `
 <DocumentFragment>
-  <figure>
-    <img />
+  <figure
+    class="listItems"
+  >
+    <img
+      class="listItems"
+    />
     <figcaption />
   </figure>
 </DocumentFragment>
