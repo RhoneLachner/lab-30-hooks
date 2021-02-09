@@ -1,5 +1,5 @@
 export const getVillagers = () => {
-  return fetch('https://ac-vill.herokuapp.com/villagers')
+  return fetch('https://ac-vill.herokuapp.com/villagers?perPage=397')
     .then(res => res.json());
 };
 
