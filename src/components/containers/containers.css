@@ -1,0 +1,46 @@
+.listItems {
+    width: 5rem;
+    height: auto;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat();
+    grid-template-rows: repeat();
+
+    text-align: center;
+    padding: 2rem;
+}
+
+img {
+    margin: 0rem;
+}
+
+.villagerList {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.detailItem {
+    text-align: center;
+   
+    img {
+        display: flex;
+        justify-self: center;
+        height: 20rem;
+        align-self: center;
+    }
+}
+
+a {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}

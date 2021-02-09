@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import styles from '../containers/containers.css';
 
 const Villager = ({ name, image, quote, skill, birthday  }) => (
-  <figure>
+  <figure className={styles.detailItem}>
     <img src={image} alt={name}></img>
     <figcaption>
       <p>Name: {name}</p>

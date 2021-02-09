@@ -2,20 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Villager from '../villagers/Villager';
 import { Link } from 'react-router-dom';
+import styles from '../containers/containers.css';
 
 const VillagerList = ({ villagers }) => {
   const villagerElements = villagers.map(villager => (
-    <li key={villager._id}>
+    <div key={villager._id}>
       <Link to={`/details/${villager._id}`}>
         <Villager {...villager} />
       </Link>
-    </li>
+    </div>
   ));
 
   return (
-    <ul>
+    <div className={styles.villagerList}>
       {villagerElements}
-    </ul>
+    </div>
   );
 };
 

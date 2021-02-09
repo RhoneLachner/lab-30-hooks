@@ -15,9 +15,7 @@ const Home = () => {
 
   if(loading) return <h1>loading</h1>;
   return <VillagerList villagers={villagers} />;
-
 };
-
 
 export default Home;
 
