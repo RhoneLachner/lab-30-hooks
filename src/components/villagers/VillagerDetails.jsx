@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const Villager = ({ name, image, quote, skill, birthday  }) => (
   <figure>
     <img src={image} alt={name}></img>
     <figcaption>
-      <p>{name}</p>
-      <p>{quote}</p>
-      <p>{skill}</p>
-      <p>{birthday}</p>
-      
+      <p>Name: {name}</p>
+      <p>Quote: {quote}</p>
+      <p>Skill: {skill}</p>
+      <p>Birthday: {birthday}</p>
     </figcaption>
 
   </figure>

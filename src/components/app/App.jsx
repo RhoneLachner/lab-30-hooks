@@ -20,7 +20,7 @@ export default function App() {
               component = { Home }
             />
             <Route
-              path="/details/:id"
+              path="/details/:_id"
               exact
               component = { Details }
             />

@@ -3,7 +3,7 @@ export const getVillagers = () => {
     .then(res => res.json());
 };
 
-export const getVillagerById = (id) => {
-  return fetch(`https://ac-vill.herokuapp.com/villagers/${id}`)
+export const getVillagerById = (_id) => {
+  return fetch(`https://ac-vill.herokuapp.com/villagers/${_id}`)
     .then(res => res.json());
 };

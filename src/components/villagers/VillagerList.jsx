@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Villager from '../villagers/Villager';
-
+import { Link } from 'react-router-dom';
 
 const VillagerList = ({ villagers }) => {
   const villagerElements = villagers.map(villager => (
     <li key={villager._id}>
-      <Villager {...villager} />
+      <Link to={`/details/${villager._id}`}>
+        <Villager {...villager} />
+      </Link>
     </li>
   ));
 
@@ -23,7 +25,8 @@ VillagerList.propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     quote: PropTypes.string.isRequired,
-    skill: PropTypes.string.isRequired
+    skill: PropTypes.string.isRequired,
+    birthday: PropTypes.string.isRequired,
   })).isRequired
 };
 
