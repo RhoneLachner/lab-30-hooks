@@ -14,7 +14,7 @@ const VillagerList = ({ villagers }) => {
   ));
 
   return (
-    <div className={styles.villagerList}>
+    <div data-testid="villagers" className={styles.villagerList}>
       {villagerElements}
     </div>
   );

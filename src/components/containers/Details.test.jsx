@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import React from 'react';
@@ -13,3 +14,5 @@ act(() => {
       });
     });
 });
+
+
