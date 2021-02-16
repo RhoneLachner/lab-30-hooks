@@ -4,14 +4,14 @@ import { getVillagerById } from '../villagers/villagerApi';
 import VillagerDetails from '../villagers/VillagerDetails';
 import styles from './containers.css';
 
-const Details = () => {
+const Details = ({ match }) => {
   const [loading, setLoading] = useState(true);
   const [villager, setVillagersById] = useState([]);
 
-  const { _id } = useParams();
+  // const { match.params._id } = useParams();
 
   useEffect(() => {
-    getVillagerById(_id).then((res) => {
+    getVillagerById(match.params._id).then((res) => {
       setVillagersById(res);
       setLoading(false);
     });

@@ -2,9 +2,9 @@
 
 exports[`VillagerList component renders VillagerList 1`] = `
 <DocumentFragment>
-  <div
+  <ul
     class="villagerList"
-    data-testid="villagers"
+    data-title="villagers"
   />
 </DocumentFragment>
 `;

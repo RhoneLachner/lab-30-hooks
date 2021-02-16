@@ -6,17 +6,17 @@ import styles from '../containers/containers.css';
 
 const VillagerList = ({ villagers }) => {
   const villagerElements = villagers.map(villager => (
-    <div key={villager._id}>
+    <li key={villager._id}>
       <Link to={`/details/${villager._id}`}>
         <Villager {...villager} />
       </Link>
-    </div>
+    </li>
   ));
 
   return (
-    <div data-testid="villagers" className={styles.villagerList}>
+    <ul data-title="villagers" className={styles.villagerList}>
       {villagerElements}
-    </div>
+    </ul>
   );
 };
 
